@@ -4,7 +4,7 @@ const Manager = require('../lib/manager');
 describe('manager', () =>{
     describe('Initialization', () =>{
         it('should create an object with name,id,email,officeNumber if provided', () =>{
-            const manager= new Manager('may', 12345,'may@example.com',107);
+            const manager= new Manager('may', 12345,'may@example.com',2058);
     
             expect(manager.name).toEqual('may');
             expect(manager.id).toEqual(12345);
@@ -15,7 +15,7 @@ describe('manager', () =>{
         
 
         it('should return "Manager"', () =>{
-            const manager = new Manager('may', 12345, 'may@example.com', 107);
+            const manager = new Manager('may', 12345, 'may@example.com', 2058);
     
             expect(manager.getRole()).toEqual('Manager');
         });

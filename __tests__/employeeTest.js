@@ -32,7 +32,7 @@ describe('employee', () =>{
         });
 
         it('should return "Employee"', () =>{
-            const employee = new Employee('may', 12345, 'may@example.com');
+            const employee = new Employee('  may', 12345, 'may@example.com');
     
             expect(employee.getRole()).toEqual('Employee');
         });
